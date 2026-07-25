@@ -844,7 +844,9 @@ PlayerSettings:
   XboxOneOverrideIdentityName: 
   XboxOneOverrideIdentityPublisher: 
   cloudServicesEnabled:
+    Purchasing: 0
     UNet: 1
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -870,7 +872,7 @@ PlayerSettings:
   cloudProjectId: 44d4aa89-94d3-4771-888a-11bc72d76306
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
+  projectName: 03RunAndJump
   organizationId: craxybolyx
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
