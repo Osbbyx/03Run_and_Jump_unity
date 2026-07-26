@@ -7,10 +7,12 @@ public class SpawnManager : MonoBehaviour
     private float nextSpawnTime = 1;
     private Vector3 spawnPosition;
     private PlayerController _playerController;
+    private Vector3 offset;
 
 
     private void Start()
     {
+        offset = new Vector3(0,0,0.79f);
         Invoke("InvocacionDeObjetos", nextSpawnTime);
         spawnPosition = transform.position;
         _playerController = GameObject.Find("Player").GetComponent<PlayerController>();
@@ -20,12 +22,12 @@ public class SpawnManager : MonoBehaviour
     {
         if (!_playerController.GameOver)
         {
-            nextSpawnTime = Random.Range(1.1f, 2.5f);
+            nextSpawnTime = Random.Range(1.05f, 2.5f);
             int indexRandom = Random.Range(0, obstacles.Length);
 
             Instantiate(
                 obstacles[indexRandom],
-                spawnPosition,
+                indexRandom == 1? spawnPosition + -offset : spawnPosition,
                 obstacles[indexRandom].transform.rotation
                 );
 

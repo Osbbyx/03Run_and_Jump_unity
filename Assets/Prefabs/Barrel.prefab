@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5129874453236435220}
   - component: {fileID: 8068272633654440729}
   - component: {fileID: 4019297385993755816}
+  - component: {fileID: -4654440775500813846}
   - component: {fileID: 5124044383365796470}
   - component: {fileID: 8060323624399217134}
   m_Layer: 0
@@ -119,6 +120,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveLeft
   velocity: 10
+--- !u!114 &-4654440775500813846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8773215227927712605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2638f750303df5f478c104ac091e08cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Spin
+  rotationVelocity: 80
 --- !u!54 &5124044383365796470
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -144,7 +158,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 88
   m_CollisionDetection: 0
 --- !u!136 &8060323624399217134
 CapsuleCollider:
@@ -153,7 +167,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8773215227927712605}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: a8930d17ccf17bf45814826ca9525e2b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
